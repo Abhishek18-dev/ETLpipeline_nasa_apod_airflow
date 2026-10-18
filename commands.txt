@@ -1,0 +1,19 @@
+docker ps -a
+docker exec -it et-lpipeline_e98612-scheduler-1 airflow connections get
+docker exec -it et-lpipeline_e98612-scheduler-1 airflow connections get my_postgres_connection
+docker exec -it et-lpipeline_e98612-postgres-1 psql -U postgres -d postgres
+docker run --rm -d --name adminer -p 8081:8080 adminer
+doskey /history >> commands.txt
+astro dev start
+astro dev restart
+doskey /history >> commands.txt
+
+
+docker exec -it et-lpipeline_e98612-postgres-1 psql -U postgres -d postgres
+SELECT * FROM apod;astro dev start
+astro dev restart
+doskey /history >> commands.txt
+astro login
+astro deploy
+astro dev stop
+doskey /history >> commands.txt
